@@ -116,9 +116,29 @@ input[type=radio] {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/*input[type-radio]:active ~ .wrapper .controls .slide1{
-  background: red;
-}*/
+#slide1:active ~ .wrapper .controls .slide1 span{
+  border: 4px solid #fff;
+}
+
+#slide2:active ~ .wrapper .controls .slide2 span{
+  border: 4px solid #fff;
+}
+
+#slide3:active ~ .wrapper .controls .slide3 span{
+  border: 4px solid #fff;
+}
+
+#slide4:active ~ .wrapper .controls .slide4 span{
+  border: 4px solid #fff;
+}
+
+#slide5:active ~ .wrapper .controls .slide5 span{
+  border: 4px solid #fff;
+}
+
+#slide6:active ~ .wrapper .controls .slide6 span{
+  border: 4px solid #fff;
+}
 
 #slide1:checked ~ .wrapper .controls .slide1 span{
   background: #fff;
