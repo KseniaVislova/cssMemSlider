@@ -236,8 +236,12 @@ input[type=radio] {
     font-size: 50%;
   }
 
+  .title__wrapper {
+    margin-bottom: 5rem;
+  }
+
   .title {
-    padding: 1rem 1rem 1rem 0.5rem;
+    padding: 3rem 1rem 3rem 0.5rem;
   }
 
   .bottom {
@@ -255,11 +259,22 @@ input[type=radio] {
     border-bottom: none;
     border-right: none;
     border-top: 0.1rem solid #fff;
+    font-size: 3rem;
     text-align: center;
   }
 
   .controls {
     grid-area: controls;
     justify-content: center;
+  }
+
+  .control label {
+    width: 4rem;
+    height: 5rem;
+  }
+  
+  .control label span {
+    width: 3rem;
+    height: 3rem;
   }
 }
