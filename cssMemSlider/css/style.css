@@ -56,7 +56,9 @@ body {
 
 .slider {
   display: flex;
+  align-items: center;
   width: 600%;
+  background-color: #fff;
   transform: translateX(0)
 }
 
@@ -67,6 +69,75 @@ body {
 .slide img{
   width: 100%;
 }
+
+.description {
+  width: 100%;
+  overflow: hidden; 
+}
+
+.description-slider {
+  display: flex;
+  width: 600%;
+}
+
+.text {
+  width: 600%;
+  margin: 0;
+  padding: 1rem;
+  font-size: 1.8rem;
+  border: 1px solid #fff;
+}
+
+.controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.control label {
+  display: block;
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+}
+
+.control label:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#slide1:checked ~ .controls .slide1{
+  background: #fff;
+}
+
+#slide2:checked ~ .controls .slide2{
+  background: #fff;
+}
+
+#slide3:checked ~ .controls .slide3{
+  background: #fff;
+}
+
+#slide4:checked ~ .controls .slide4{
+  background: #fff;
+}
+
+#slide5:checked ~ .controls .slide5{
+  background: #fff;
+}
+
+#slide6:checked ~ .controls .slide6{
+  background: #fff;
+}
+
+/*Слайдер*/
 
 #slide1:checked ~ .slider {
   transform: translateX(0)
@@ -114,52 +185,4 @@ body {
 
 #slide6:checked ~ .description-slider {
   transform: translateX(calc((-100% / 6) * 5));
-}
-
-.description {
-  width: 100%;
-  overflow: hidden; 
-}
-
-.description-slider {
-  display: flex;
-  width: 600%;
-}
-
-.text {
-  width: 600%;
-  margin: 0;
-  padding: 1rem;
-  font-size: 1.8rem;
-  color: #bcbdc3;
-  background-color: #fff;
-}
-
-.controls {
-  display: flex;
-  justify-content: flex-end;
-  gap: 0.5rem;
-  padding: 1rem;
-}
-
-input[type=radio] {
-  display: none;
-}
-
-.control label {
-  display: block;
-  width: 1.2rem;
-  height: 1.2rem;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  cursor: pointer;
-  user-select: none;
-}
-
-.control label:hover {
-  background-color: #fff;
-}
-
-.control input[type=radio]:checked + label {
-  background: #ffe0a6;
 }
