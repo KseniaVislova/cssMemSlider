@@ -23,14 +23,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto Flex', Arial, Helvetica, sans-serif;
-  font-size: 10px;
   color: #fff;
   background-color: #bcbdc3;
 }
 
 .container {
   width: 100%;
-  max-width: 1024px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 3rem;
 }
@@ -95,7 +94,8 @@ body {
   margin: 0;
   padding: 1rem;
   font-size: 1.8rem;
-  border: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
 }
 
 .controls {
@@ -103,7 +103,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   padding: 1rem;
-  border: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 
 input[type=radio] {
@@ -215,4 +215,37 @@ input[type=radio] {
 #slide6:checked ~ .wrapper .description-slider {
   transform: translateX(calc((-100% / 6) * 5));
   transition: all 1s ease-in-out;
+}
+
+@media (max-width: 767px) {
+  /* html {
+    font-size: 75%;
+  } */
+
+  .title {
+    padding: 1rem 1rem 1rem 0;
+  }
+
+  .bottom {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      'controls'
+      'slider';
+  }
+
+  .description {
+    grid-area: slider;
+  }
+
+  .text {
+    border-bottom: none;
+    border-right: none;
+    border-top: 1px solid #fff;
+    text-align: center;
+  }
+
+  .controls {
+    grid-area: controls;
+    justify-content: center;
+  }
 }
