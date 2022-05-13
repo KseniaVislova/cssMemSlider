@@ -24,7 +24,7 @@ body {
 
 .title {
   display: inline-block;
-  margin: 0 0 1rem 0;
+  margin: 0 0 2rem 0;
   padding: 2rem 2rem 2rem 0;
   font-size: 2rem;
   text-transform: uppercase;
@@ -57,6 +57,7 @@ body {
 .slider {
   display: flex;
   width: 600%;
+  transform: translateX(0)
 }
 
 .slide {
@@ -65,6 +66,30 @@ body {
 
 .slide img{
   width: 100%;
+}
+
+#slide1:checked ~ .slider {
+  transform: translateX(0)
+}
+
+#slide2:checked ~ .slider {
+  transform: translateX(calc((-100% / 6) * 1));
+}
+
+#slide3:checked ~ .slider {
+  transform: translateX(calc((-100% / 6) * 2));
+}
+
+#slide4:checked ~ .slider {
+  transform: translateX(calc((-100% / 6) * 3));
+}
+
+#slide5:checked ~ .slider {
+  transform: translateX(calc((-100% / 6) * 4));
+}
+
+#slide6:checked ~ .slider {
+  transform: translateX(calc((-100% / 6) * 5));
 }
 
 .description {
@@ -93,7 +118,7 @@ body {
   padding: 1rem;
 }
 
-.control input[type=radio] {
+input[type=radio] {
   display: none;
 }
 
@@ -104,8 +129,13 @@ body {
   border: 1px solid #fff;
   border-radius: 50%;
   cursor: pointer;
+  user-select: none;
 }
 
 .control label:hover {
   background-color: #fff;
+}
+
+.control input[type=radio]:checked + label {
+  background: #ffe0a6;
 }
