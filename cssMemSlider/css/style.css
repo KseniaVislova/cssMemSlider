@@ -122,62 +122,22 @@ input[type=radio] {
   transition: all 1s ease-in-out;
 }
 
-#slide1:active ~ .wrapper .controls .slide1 span{
-  border: 4px solid #fff;
-  transition: all 0.1s ease-in-out;
-}
-
-#slide2:active ~ .wrapper .controls .slide2 span{
-  border: 4px solid #fff;
-  transition: all 0.1s ease-in-out;
-}
-
-#slide3:active ~ .wrapper .controls .slide3 span{
-  border: 4px solid #fff;
-  transition: all 0.1s ease-in-out;
-}
-
-#slide4:active ~ .wrapper .controls .slide4 span{
-  border: 4px solid #fff;
-  transition: all 0.1s ease-in-out;
-}
-
-#slide5:active ~ .wrapper .controls .slide5 span{
-  border: 4px solid #fff;
-  transition: all 0.1s ease-in-out;
-}
-
+#slide1:active ~ .wrapper .controls .slide1 span, 
+#slide2:active ~ .wrapper .controls .slide2 span, 
+#slide3:active ~ .wrapper .controls .slide3 span, 
+#slide4:active ~ .wrapper .controls .slide4 span, 
+#slide5:active ~ .wrapper .controls .slide5 span, 
 #slide6:active ~ .wrapper .controls .slide6 span{
   border: 4px solid #fff;
   transition: all 0.1s ease-in-out;
 }
 
-#slide1:checked ~ .wrapper .controls .slide1 span{
-  background: #fff;
-  transition: all 1s ease-in-out;
-}
-
-#slide2:checked ~ .wrapper .controls .slide2 span{
-  background: #fff;
-  transition: all 1s ease-in-out;
-}
-
-#slide3:checked ~ .wrapper .controls .slide3 span{
-  background: #fff;
-  transition: all 1s ease-in-out;
-}
-
-#slide4:checked ~ .wrapper .controls .slide4 span{
-  background: #fff;
-  transition: all 1s ease-in-out;
-}
-
-#slide5:checked ~ .wrapper .controls .slide5 span{
-  background: #fff;
-  transition: all 1s ease-in-out;
-}
-
-#slide6:checked ~ .wrapper .controls .slide6 span{
+#slide1:checked ~ .wrapper .controls .slide1 span, 
+#slide2:checked ~ .wrapper .controls .slide2 span, 
+#slide3:checked ~ .wrapper .controls .slide3 span, 
+#slide4:checked ~ .wrapper .controls .slide4 span, 
+#slide5:checked ~ .wrapper .controls .slide5 span, 
+#slide6:checked ~ .wrapper .controls .slide6 span {
   background: #fff;
   transition: all 1s ease-in-out;
 }
