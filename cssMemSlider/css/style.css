@@ -86,7 +86,6 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 0.5rem;
   padding: 1rem;
   border: 1px solid #fff;
 }
@@ -96,40 +95,52 @@ input[type=radio] {
 }
 
 .control label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 3rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.control label span {
   display: block;
   width: 1.2rem;
   height: 1.2rem;
   border: 1px solid #fff;
   border-radius: 50%;
-  cursor: pointer;
-  user-select: none;
 }
 
-.control label:hover {
+.control label:hover span {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-#slide1:checked ~ .wrapper .controls .slide1{
+/*input[type-radio]:active ~ .wrapper .controls .slide1{
+  background: red;
+}*/
+
+#slide1:checked ~ .wrapper .controls .slide1 span{
   background: #fff;
 }
 
-#slide2:checked ~ .wrapper .controls .slide2{
+#slide2:checked ~ .wrapper .controls .slide2 span{
   background: #fff;
 }
 
-#slide3:checked ~ .wrapper .controls .slide3{
+#slide3:checked ~ .wrapper .controls .slide3 span{
   background: #fff;
 }
 
-#slide4:checked ~ .wrapper .controls .slide4{
+#slide4:checked ~ .wrapper .controls .slide4 span{
   background: #fff;
 }
 
-#slide5:checked ~ .wrapper .controls .slide5{
+#slide5:checked ~ .wrapper .controls .slide5 span{
   background: #fff;
 }
 
-#slide6:checked ~ .wrapper .controls .slide6{
+#slide6:checked ~ .wrapper .controls .slide6 span{
   background: #fff;
 }
 
